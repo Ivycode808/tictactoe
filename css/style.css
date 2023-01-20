@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+:root{
+  --winning-blocks: #E29578;
+}
+
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -20,10 +24,6 @@ h1{
   text-align: center;
   color: #EDF6F9;
   margin: 1rem auto;
-}
-
-:root{
-    --winning-blocks: #E29578;
 }
 
 .container {

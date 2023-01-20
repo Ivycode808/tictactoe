@@ -44,8 +44,11 @@ function fillBox(event){
     let winning_blocks = playerWins()
     //if a player wins, check the array combo that won and change the background color
     winning_blocks.map(box => boxes[box].style.backgroundColor=winnerIndicator)
-    return
+    //prevent players from continuing to click boxes after a win
+    spaces.fill(!null)
+    return 
     }
+
     //Next we need logic to switch between players X and O
     //if currentPLayer is X, then switch to O; if currentPlayer is O, switch to X
     currentPlayer = currentPlayer == X_TEXT ? O_TEXT : X_TEXT
@@ -103,3 +106,4 @@ function reset(){
 
 startGame()
 
+//add localStorage win tracker to upgrade the games
