@@ -105,5 +105,3 @@ function reset(){
 }
 
 startGame()
-
-//add localStorage win tracker to upgrade the games
